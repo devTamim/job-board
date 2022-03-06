@@ -1,4 +1,249 @@
 .hero {
   background-color: #eaf0fa;
-  height: 100vh;
+  height: 90vh;
+}
+.hero-title {
+  height: 90vh;
+}
+.category-title:hover {
+  color: rgb(29, 3, 180) !important;
+}
+.tag{
+  background-color: rgb(175, 216, 250) !important;
+}
+.tag1{
+  background-color: rgb(159, 253, 190) !important;
+}
+.tag2{
+  background-color: rgb(247, 243, 199) !important;
+}
+.feature{
+  background-color: aqua;
+  height: 100px;
+  width: 100px;
+
+}
+
+.user-sidebar {
+  position: fixed;
+  left: 0;
+  bottom:1;
+  height: calc(100%);
+  width: 365px;
+
+  background: #ffffff;
+  overflow: auto;
+  transition: all 300ms ease;
+  z-index: 9;
+  border: 1px solid #ECEDF2;
+  box-shadow: 0px 6px 15px rgba(64, 79, 104, 0.05);
+}
+
+.user-sidebar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.user-sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.user-sidebar::-webkit-scrollbar-thumb {
+  background-color: #F0F5F7;
+  border-radius: 10px;
+}
+
+.user-sidebar-active .user-sidebar {
+  transform: translateX(0);
+}
+
+.sidebar-backdrop {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  transition: all 300ms ease;
+  z-index: 98;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.user-sidebar .sidebar-inner {
+  position: relative;
+  padding: 20px 40px;
+}
+
+.user-sidebar .sidebar-header {
+  position: relative;
+  padding: 30px 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 230px;
+  border-bottom: 1px solid #f1f3f7;
+}
+
+.user-sidebar .sidebar-header .user-image {
+  position: relative;
+  border-radius: 50%;
+  height: 110px;
+  width: 110px;
+  border: 5px solid #dddee0;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.user-sidebar .sidebar-header .user-image img {
+  width: 100%;
+  display: block;
+}
+
+.user-sidebar .sidebar-header .user-name {
+  position: relative;
+  font-size: 15px;
+  line-height: 18px;
+  color: #1b2032;
+  font-weight: 700;
+}
+
+.user-sidebar .navigation {
+  position: relative;
+  left: 0;
+  width: 100%;
+  margin: 0px;
+}
+
+.user-sidebar .navigation li {
+  position: relative;
+  width: 100%;
+}
+
+.user-sidebar .navigation li a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 10px 30px;
+  line-height: 30px;
+  font-weight: 400;
+  font-size: 15px;
+  color: #696969;
+  text-align: left;
+  text-transform: capitalize;
+  border-radius: 8px;
+  transition: all 500ms ease;
+  text-decoration: none;
+}
+
+.user-sidebar .navigation li a i {
+  position: relative;
+  margin-right: 15px;
+  font-size: 22px;
+  color: #696969;
+  text-align: center;
+  transition: all 500ms ease;
+}
+
+.user-sidebar .navigation > li.active > a,
+.user-sidebar .navigation > li:hover > a {
+  color: #1967D2;
+  background: rgba(25, 103, 210, 0.1);
+}
+
+.user-sidebar .navigation li.active a i,
+.user-sidebar .navigation li:hover a i {
+  color: #1967D2;
+}
+
+.place.sky {
+  color: #4cbfd8;
+}
+
+.place.sky .icon {
+  background-color: #4cbfd8;
+}
+
+.place.pink {
+  color: #ff8480;
+}
+
+.place.pink .icon {
+  background-color: #ff8480;
+}
+
+.place.purple {
+  color: #8c689d;
+}
+
+.place.purple .icon {
+  background-color: #8c689d;
+}
+
+.place.green {
+  color: #35c2a5;
+}
+
+.place.green .icon {
+  background-color: #35c2a5;
+}
+
+.place.dark-pink {
+  color: #ff007a;
+}
+
+.place.dark-pink .icon {
+  background-color: #ff007a;
+}
+
+.place.orange {
+  color: #ffb874;
+}
+
+.place.orange .icon {
+  background-color: #ffb874;
+}
+
+.place.purple {
+  color: #8c689d;
+}
+
+.place.purple .icon {
+  background-color: #8c689d;
+}
+
+.skills-percentage {
+  position: relative;
+  margin-top: 55px;
+}
+
+.skills-percentage h4 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #202124;
+  margin-bottom: 20px;
+}
+
+.skills-percentage p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #696969;
+  margin-bottom: 25px;
+}
+
+.skills-percentage .pie-graph {
+  position: relative;
+  margin-bottom: 0;
+}
+
+.skills-percentage .graph-outer:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 234px;
+  width: 234px;
+  border: 30px solid #ECEDF2;
+  content: "";
+  border-radius: 50%;
+  z-index: -1;
+  transform: scale(0.9);
 }

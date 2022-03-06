@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,9 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- bootstrap css -->
     <link rel="stylesheet" href="asset/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <!-- bootstrap css start -->
-    <link rel="stylesheet" href="asset/custom-css/style.css" />
+    <link rel="stylesheet" href="./asset/custom-css/style.css" />
     <title>Document</title>
   </head>
   <body>
@@ -56,35 +61,14 @@
             <a href="" class="text-decoration-none me-3">Upload your CV</a>
             <div class="bg-light px-3 py-2 rounded-pill">
               <small>
-                <a href="" class="text-decoration-none">Login</a> /
-                <a href="" class="text-decoration-none">Register</a></small
+                <a href="login.php" class="text-decoration-none">Login</a> /
+                <a href="register.php" class="text-decoration-none">Register</a>
+                <a href="logout.php" class="text-decoration-none">logout</a>
+                </small
               >
             </div>
             <a href="" class="btn btn-primary ms-3 px-4">Job post</a>
           </div>
         </div>
       </nav>
-
-      <!-- nav end  -->
-
-      <!-- hero Section start-->
-      <section class="hero">
-        <div class="row">
-          <div class="col-md-6">
-            <h1>hello world</h1>
-          </div>
-          <div class="col-md-6">
-            <img src="media/images/hero.png" alt="" class="img-fluid" />
-          </div>
-        </div>
-      </section>
-
-      <!-- hero section end -->
-    </header>
-    <footer>
-      <!-- js start -->
-      <script src="asset/bootstrap/js/bootstrap.bundle.min.js"></script>
-      <!-- js end -->
-    </footer>
-  </body>
-</html>
+      </header>
